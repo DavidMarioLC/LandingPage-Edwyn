@@ -1,17 +1,20 @@
+.projects__content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
 .card {
   margin: 0 1rem 0 0;
 }
 
 .card__image {
-  /* display: inline-block; */
   position: relative;
-  /* border: 3px solid green; */
   text-align: right;
 }
 
 .card__image img {
   max-width: 100%;
-  /* border: 1px solid red; */
   vertical-align: middle;
 }
 
@@ -44,10 +47,18 @@
 }
 
 @media screen and (min-width: 768px) {
+  .projects__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12.5rem;
+  }
+
   .card {
     display: grid;
     grid-template-columns: auto 16px 1fr;
-    grid-template-rows: 100px 256px 91px;
+    grid-template-rows: 100px 256px 1fr;
   }
 
   .card__image {
@@ -60,5 +71,9 @@
     grid-column: 2/4;
     grid-row: 2/4;
     /* padding: 4rem 1.5rem 4rem 4.3rem; */
+  }
+
+  .card__buttons {
+    flex-direction: row;
   }
 }
