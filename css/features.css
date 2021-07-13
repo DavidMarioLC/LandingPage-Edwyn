@@ -1,0 +1,12 @@
+.features {
+  text-align: left;
+}
+
+.feature__item__icon {
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.features__item__text {
+  font: var(--headline5);
+}

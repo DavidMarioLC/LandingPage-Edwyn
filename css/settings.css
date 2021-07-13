@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Exo;
+  src: url("../fonts/Exo-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cantarell;
+  src: url("../fonts/Cantarell-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cantarell;
+  src: url("../fonts/Cantarell-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --fontbase1: Exo, sans-serif;
+  --fontbase2: Cantarell, sans-serif;
+  --primary: #5928e5;
+  --white: #ffffff;
+  --secondary: #fed9da;
+  --black: #000000;
+  --headline1: 700 6.25rem/5.8125rem var(--fontbase1);
+  --headline2: 700 3.6875rem/5.96637487411499rem var(--fontbase1);
+  --headline3: 700 3rem/4.854000091552734rem var(--fontbase1);
+  --headline4: 700 2rem/1.899999976158142rem var(--fontbase1);
+  --headline5: 700 1.5rem/1.75rem var(--fontbase1);
+  --body1: 400 1.125rem/1.6875rem var(--fontbase2);
+  --body2: 400 1rem/1.375rem var(--fontbase2);
+  --button: 700 1rem/1.5rem var(--fontbase2);
+  --caption: 400 0.75rem/1.375rem var(--fontbase2);
+}
+
+body {
+  margin: 0;
+  background: var(--secondary);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

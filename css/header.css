@@ -1,0 +1,28 @@
+@import "./menu.css";
+
+.header {
+  padding: 1rem 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo and icon */
+.logoAndIcon {
+}
+
+.logoAndIcon .icon-menu {
+  font-size: 1.5rem;
+  color: var(--black);
+  padding-right: 1rem;
+  vertical-align: middle;
+}
+.logo {
+  color: var(--primary);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}

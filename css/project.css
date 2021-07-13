@@ -1,0 +1,15 @@
+@import "./tabs.css";
+@import "./card.css";
+
+.projects {
+  text-align: center;
+  padding-top: 2.5rem;
+  background: var(--white);
+}
+
+.projects__title {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  font: var(--headline4);
+  color: var(--primary);
+}

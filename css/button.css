@@ -1,0 +1,15 @@
+.btn {
+  padding: 0.75rem 1.5rem;
+  font: var(--button);
+}
+
+.btn.btn--primary {
+  color: var(--white);
+  background: var(--primary);
+}
+
+.btn.btn--secondary {
+  color: var(--primary);
+  background: transparent;
+  border: 1px solid var(--primary);
+}

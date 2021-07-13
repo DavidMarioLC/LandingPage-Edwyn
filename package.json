@@ -1,0 +1,15 @@
+{
+  "name": "portafolio-edwyn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor --browser --reload"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}

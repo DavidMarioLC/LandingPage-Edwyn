@@ -1,0 +1,28 @@
+@import "./features.css";
+
+.hero {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.hero__content {
+  text-align: center;
+}
+
+.hero__img {
+  display: inline-block;
+  border: 4px solid var(--primary);
+  border-radius: 50%;
+}
+
+.hero__title {
+  font: var(--headline4);
+  color: var(--primary);
+  margin: 2.5rem 0;
+}
+
+.hero__description {
+  font: var(--body1);
+  margin: 0;
+  margin-bottom: 2.5rem;
+}
