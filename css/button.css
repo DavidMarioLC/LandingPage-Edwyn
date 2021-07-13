@@ -13,3 +13,14 @@
   background: transparent;
   border: 1px solid var(--primary);
 }
+
+.btn.btn--secondary.rosa {
+  color: var(--secondary);
+  background: transparent;
+  border: 1px solid var(--secondary);
+}
+
+.btn.btn--primary.rosa {
+  color: var(--primary);
+  background: var(--secondary);
+}
