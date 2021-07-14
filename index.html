@@ -13,22 +13,24 @@
       <div class="wrapper">
         <div class="header__content">
           <div class="logoAndIcon">
-            <i class="icon-menu"></i>
+            <i id="button-menu" class="icon-menu"></i>
             <a class="logo" href="#">LOGO</a>
           </div>
-          <nav class="menu">
-            <ul class="list">
-              <li><a class="list__link" href="#">Hola</a></li>
+          <nav id="menu" class="menu">
+            <div id="overlay" class="overlay"></div>
+            <ul id="list" class="list">
+              <a class="logo" href="#" aria-hidden="true">LOGO</a>
+              <li><a class="list__link isActive" href="#">Hola</a></li>
               <li><a class="list__link" href="#proyectos">Proyectos</a></li>
               <li><a class="list__link" href="#testimonios">Testimonios</a></li>
               <li><a class="list__link" href="#contacto">Contacto</a></li>
             </ul>
           </nav>
-          <a class="btn btn--primary" href="#">Currículum</a>
+          <a class="btn btn--primary" href="#">Descargar currículum</a>
         </div>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" aria-label="Seccion de Hero">
       <div class="wrapper">
         <div class="hero__content">
           <img
@@ -39,7 +41,10 @@
             height="80"
             alt="Foto de Edwyn"
           />
-          <h1 class="hero__title">¡Hola a todos! Soy Edwyn Cortez</h1>
+          <h1 class="hero__title">
+            ¡Hola a todos!
+            <p>Soy Edwyn Cortez</p>
+          </h1>
           <p class="hero__description">
             Developer que le encanta implementar diseños que inspiran y atraen a
             las personas.
@@ -68,7 +73,7 @@
         </div>
       </div>
     </section>
-    <main class="projects">
+    <main id="proyectos" class="projects" aria-label="Proyectos de edwyn">
       <div class="wrapper">
         <h2 class="projects__title">Proyectos</h2>
         <ul class="tabs">
@@ -89,6 +94,9 @@
                 src="./images/thumbnail-project-niko.png"
                 alt="Proyecto Niko"
                 title="Proyecto Niko"
+                loading="lazy"
+                height="350"
+                width="350"
               />
             </div>
             <div class="card__description">
@@ -100,8 +108,19 @@
                 oficial de Niko, donde tenemos uno de los calzados más...
               </p>
               <div class="card__buttons">
-                <a class="btn btn--secondary" href="#">Ver código</a>
-                <a class="btn btn--primary" href="#">Ver proyecto</a>
+                <a
+                  class="btn btn--secondary"
+                  href="https://github.com/DavidMarioLC"
+                  rel="noopener"
+                  >Ver código</a
+                >
+                <a
+                  class="btn btn--primary"
+                  href="https://github.com/DavidMarioLC"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver proyecto</a
+                >
               </div>
             </div>
           </div>
@@ -111,6 +130,9 @@
                 src="./images/thumbnail-project-marvol.png"
                 alt="Proyecto Niko"
                 title="Proyecto Niko"
+                loading="lazy"
+                height="350"
+                width="350"
               />
             </div>
             <div class="card__description">
@@ -120,8 +142,20 @@
                 secciones de interés para todos los fanáticos de Marvol.
               </p>
               <div class="card__buttons">
-                <a class="btn btn--secondary rosa" href="#">Ver código</a>
-                <a class="btn btn--primary rosa" href="#">Ver proyecto</a>
+                <a
+                  class="btn btn--secondary rosa"
+                  href="https://github.com/DavidMarioLC"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver código</a
+                >
+                <a
+                  class="btn btn--primary rosa"
+                  href="https://github.com/DavidMarioLC"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver proyecto</a
+                >
               </div>
             </div>
           </div>
@@ -131,6 +165,9 @@
                 src="./images/thumbnail-project-spotifu.png"
                 alt="Proyecto Spotifu"
                 title="Proyecto Spotifu"
+                loading="lazy"
+                height="350"
+                width="350"
               />
             </div>
             <div class="card__description">
@@ -141,15 +178,31 @@
                 de las apps más famosas de la industria musical.
               </p>
               <div class="card__buttons">
-                <a class="btn btn--secondary" href="#">Ver código</a>
-                <a class="btn btn--primary" href="#">Ver proyecto</a>
+                <a
+                  class="btn btn--secondary"
+                  href="https://github.com/DavidMarioLC/portafolio-spotifu"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver código</a
+                >
+                <a
+                  class="btn btn--primary"
+                  href="https://davidmariolc.github.io/portafolio-spotifu/"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver proyecto</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <section class="testimonys">
+    <section
+      id="testimonios"
+      class="testimonys"
+      aria-label="Testimonios de clientes"
+    >
       <h2 class="testimonys__title">Testimonios</h2>
       <div class="wrapper">
         <div class="testimonys__content">
@@ -160,8 +213,8 @@
               alt="Foto de cliente Agustin"
               title="Foto de cliente Agustin"
               loading="lazy"
-              width="80"
-              height="80"
+              width="128"
+              height="128"
             />
             <div class="info">
               <h3 class="title">Agustin</h3>
@@ -179,8 +232,8 @@
               alt="Foto de cliente Agustin"
               title="Foto de cliente Agustin"
               loading="lazy"
-              width="80"
-              height="80"
+              width="128"
+              height="128"
             />
             <div class="info">
               <h3 class="title">Aritz</h3>
@@ -198,8 +251,8 @@
               alt="Foto de cliente Agustin"
               title="Foto de cliente Agustin"
               loading="lazy"
-              width="80"
-              height="80"
+              width="128"
+              height="128"
             />
             <div class="info">
               <h3 class="title">Victoriano</h3>
@@ -216,8 +269,8 @@
               alt="Foto de cliente Agustin"
               title="Foto de cliente Agustin"
               loading="lazy"
-              width="80"
-              height="80"
+              width="128"
+              height="128"
             />
             <div class="info">
               <h3 class="title">Jose Enrique</h3>
@@ -230,7 +283,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contacto" class="contact" aria-label="Contactate conmigo">
       <div class="wrapper">
         <h2 class="contact__title">Contacto</h2>
         <p class="contact__info">
@@ -239,15 +292,20 @@
         </p>
         <div class="contact__content">
           <form class="form" action="">
-            <input class="input" type="text" placeholder="Nombre completo" />
-            <input
-              class="input"
-              type="email"
-              placeholder="Correo electrónico"
-            />
-            <textarea class="input" name="" id="" cols="30" rows="10">
-            Mensaje
+            <label class="label" for="name">Nombre completo: </label>
+            <input id="name" class="input" type="text" />
+            <label class="label" for="mail">Email: </label>
+            <input id="mail" class="input" type="email" />
+            <label class="label" for="textarea">Mensaje: </label>
+            <textarea
+              class="input textarea"
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+            >
             </textarea>
+
             <button class="form-button" type="submit">Enviar mensaje</button>
           </form>
         </div>
@@ -257,13 +315,46 @@
       <div class="wrapper">
         <div class="footer__content">
           <div class="footer__contacts">
-            <p>Contacto</p>
-            <ul>
-              <li><a href="#">Correo electrónico</a></li>
-              <li><a href="#">Teléfono</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
+            <p class="title">Contacto</p>
+            <ul class="socials">
+              <li>
+                <a
+                  href="https://twitter.com/DavidMarioLC"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="icon-mail"></i>Correo electrónico</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/DavidMarioLC"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="icon-phone"></i> Teléfono</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/DavidMarioLC"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="icon-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/DavidMarioLC"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="icon-twitter"></i> Twitter</a
+                >
+              </li>
             </ul>
+          </div>
+          <div class="footer__logo">
+            <a href="#">logo</a>
+            <p>Hecho con ❤ de Edwyn</p>
+            <p>Copyright 2021 - Todos los derechos reservados.</p>
           </div>
         </div>
       </div>

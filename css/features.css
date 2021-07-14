@@ -1,4 +1,5 @@
 .features {
+  margin-top: 104px;
   text-align: left;
 }
 
@@ -9,4 +10,12 @@
 
 .features__item__text {
   font: var(--headline5);
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
 }

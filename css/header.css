@@ -1,7 +1,11 @@
 @import "./menu.css";
 
 .header {
+  background: var(--secondary);
+  position: sticky;
+  top: 0;
   padding: 1rem 0;
+  z-index: 6;
 }
 
 .header__content {
@@ -19,6 +23,7 @@
   color: var(--black);
   padding-right: 1rem;
   vertical-align: middle;
+  cursor: pointer;
 }
 .logo {
   color: var(--primary);

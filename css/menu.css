@@ -1,3 +1,72 @@
 .menu {
+}
+
+.overlay {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.list {
+  list-style: none;
+  background: var(--white);
+
+  position: fixed;
+
+  left: -100%;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+
+  width: 50%;
+  height: 100%;
+  padding: 1.5rem;
+
+  transition: left 250ms ease;
+}
+
+.list__link {
+  color: var(--black);
+  opacity: 0.5;
+  font: var(--headline5);
+}
+
+.isActive {
+  opacity: 1;
+}
+
+.showOverlay {
+  display: block;
+}
+.showMenu {
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+  .list .logo {
+    display: none;
+  }
+  .list {
+    all: unset;
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .list__link {
+    font: var(--button);
+    color: var(--primary);
+  }
+
+  .icon-menu {
+    display: none;
+  }
 }

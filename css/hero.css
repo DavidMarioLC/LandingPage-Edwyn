@@ -21,8 +21,25 @@
   margin: 2.5rem 0;
 }
 
+.hero__title p {
+  margin: 0;
+}
+
 .hero__description {
   font: var(--body1);
-  margin: 0;
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
+  margin: auto;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font: var(--headline1);
+  }
+
+  .hero__img {
+    height: auto;
+    width: auto;
+    border: 8px solid var(--primary);
+  }
 }

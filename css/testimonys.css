@@ -1,4 +1,5 @@
 .testimonys {
+  padding-top: 6rem;
   background: var(--white);
 }
 .testimonys__title {
@@ -7,7 +8,6 @@
   margin-bottom: 6rem;
   font: var(--headline4);
   color: var(--primary);
-  text-transform: uppercase;
 }
 
 .testimonys__content {
@@ -15,7 +15,7 @@
   grid-template-columns: repeat(1, 1fr);
   row-gap: 6rem;
   column-gap: 2.5rem;
-  padding-top: 2.5rem;
+
   padding-bottom: 5rem;
 }
 
@@ -29,7 +29,6 @@
   grid-column: 1/3;
   grid-row: 1/3;
   height: auto;
-  /* border: 3px solid red; */
   max-width: 100%;
   z-index: 2;
   vertical-align: middle;
@@ -42,13 +41,12 @@
   padding: 4rem 1.5rem;
   box-shadow: 16px 16px 0 0 var(--primary);
   background: var(--secondary);
-  /* border: 3px solid green; */
 }
 
 .testimonys .card .title {
   font: var(--headline4);
   color: var(--black);
-  text-transform: uppercase;
+
   margin: 0;
 }
 
@@ -58,7 +56,6 @@
 }
 
 /* variant purple */
-
 .testimonys__content .card:nth-of-type(2) .info,
 .testimonys__content .card:nth-of-type(3) .info {
   background: var(--primary);
@@ -74,5 +71,8 @@
 @media screen and (min-width: 768px) {
   .testimonys__content {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonys__title {
+    font: var(--headline1);
   }
 }

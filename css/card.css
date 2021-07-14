@@ -58,7 +58,7 @@
 }
 
 .projects__content .card:nth-of-type(2) .card__description {
-  box-shadow: 16px 16px 0 0 var(--secondary);
+  box-shadow: -16px 16px 0 0 var(--secondary);
 }
 
 @media screen and (min-width: 768px) {
